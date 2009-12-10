@@ -44,7 +44,7 @@
     Exaile is a music manager and player for GTK+ written in Python.
   \end{quote}
   \begin{figure}
-    \includegraphics[height=60mm]{images/exaile}
+    %FIXME:\includegraphics[height=60mm]{images/exaile.eps}
     \caption{The Program}
   \end{figure}
 \end{frame}
@@ -90,7 +90,7 @@
   \begin{itemize}
     \item Select this from the menu:
 
-    \includegraphics[keepaspectratio]{images/tools-menu}
+    %FIXME:\includegraphics[keepaspectratio]{images/tools-menu}
     \item And the entire playlist is randomized.
 	\item What if we only want to randomize a subset of the playlist?
   \end{itemize}
@@ -102,10 +102,44 @@
   \item Select several things in your playlist:
   \item Right click, then use this menu-item:
 
-    \includegraphics[keepaspectratio]{images/randomize-menu-item}
+    %FIXME:\includegraphics[keepaspectratio]{images/randomize-menu-item}
   \item The selected items are randomized.
   \end{itemize}
 \end{frame}
+
+\subsection{Unified Engine}
+
+\begin{frame}{Feature: Unified engine}
+  \begin{itemize}
+    \item Exaile has two engines: "Normal" and "Unified"
+	\item The normal engine is boring.
+	\item The unified engine is shiny.
+  \end{itemize}
+\end{frame}
+
+\subsubsection{The Old Way}
+\begin{frame}{The Old Way}
+  \begin{itemize}
+    \item The normal engine just plays one song at a time.
+	\item The unified engine allows us to:
+	  \begin{itemize}
+	    \item Crossfade
+		\item Gapless playback
+		\item \textit{(insert other potentially shiny here)}
+      \end{itemize}
+	\item It doesn't work. Playback randomly skips, buggy.
+  \end{itemize}
+\end{frame}
+
+\subsubsection{The\ldots\ not New Way}
+\begin{frame}{The\ldots\ not New Way}
+  \begin{itemize}
+    \item Fix/rewrite of the unified engine didn't happen.
+	\item Engine turned out to be complex:
+	\item \textgreater 1500 lines of code. (And not simple GUI stuff.)
+  \end{itemize}
+\end{frame}
+
 
 \subsection{Awn Integration}
 \begin{frame}{Feature: Awn Integration}
@@ -121,7 +155,7 @@ architecture
   \end{itemize}
   \begin{figure}
     \centering
-    \includegraphics[width=100mm]{images/awn}
+    %FIXME:\includegraphics[width=100mm]{images/awn}
     \caption{Completely original task bar}
   \end{figure}
 \end{frame}
@@ -130,7 +164,7 @@ architecture
 \begin{frame}{The Old Way}
   \begin{figure}
     \centering
-    \includegraphics[width=100mm]{images/awn}
+    %FIXME:\includegraphics[width=100mm]{images/awn}
     \caption{Same example of completely original task bar}
   \end{figure}
 \end{frame}
@@ -139,7 +173,7 @@ architecture
 \begin{frame}{The New Way}
   \begin{figure}
     \centering
-    \includegraphics[width=100mm]{images/awn-new}
+    %FIXME:\includegraphics[width=100mm]{images/awn-new}
     \caption{New and improved task bar}
   \end{figure}
 \end{frame}
@@ -193,6 +227,14 @@ Roy Wellington: I've just been stalking the channel thus far, and I got:
 
 Roy Wellington: 19:33  * reacocard wonders if deathanatos is ever going to say anything :)
 \end{quote}
+\end{frame}
+
+\begin{frame}{Roy's experience}
+  \begin{itemize}
+    \item First time I've ever gotten that while stalking in IRC.
+	\item Community welcomes those who want to help.
+	\item Contact is easy, project seems alive and well.
+  \end{itemize}
 \end{frame}
 
 \end{document} %
