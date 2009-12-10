@@ -4,7 +4,7 @@
 %\usefonttheme[onlylarge]{structurebold}
 %\setbeamerfont*{frametitle}{size=\normalsize,series=\bfseries}
 %\setbeamertemplate{navigation symbols}{}
-
+\usepackage{listings}
 
 % Standard packages
 % Author, Title, etc.
@@ -24,6 +24,7 @@
 % The main document
 
 \begin{document}
+\lstset{language=Python}
 
 \begin{frame}
   \titlepage
@@ -141,6 +142,24 @@ architecture
     \includegraphics[width=100mm]{images/awn-new}
     \caption{New and improved task bar}
   \end{figure}
+\end{frame}
+
+\subsection{Planned features}
+\begin{frame}{Planned feature}
+  \begin{itemize}
+    \item There were a few features that we were not able to implement but
+      were in the process of discussing and coding
+    \item Those features were:
+    \begin{itemize}
+      \item Stabilize Unified Playback engine
+      \item Reduce memory footprint
+      \item Fix tests (G's wanted to do this for a while, but there's a
+        \emph{lot} wrong with them)
+      \item Kill all \lstinline!except:!'s (Considered bad form in python)
+    \end{itemize}
+  \end{itemize}
+  All of these features have been discussed with the lead devs and approved.
+  The work for them just has to be done.
 \end{frame}
 
 \end{document} %
